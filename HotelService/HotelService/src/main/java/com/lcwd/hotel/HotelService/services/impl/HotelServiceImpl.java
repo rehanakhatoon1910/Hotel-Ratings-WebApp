@@ -20,7 +20,6 @@ public class HotelServiceImpl implements HotelService {
     public Hotel create(Hotel hotel) {
         String hotelId =UUID.randomUUID().toString();
         hotel.setId(hotelId);
-        System.out.println("implService create method hotel");
         return hotelRepository.save(hotel);
     }
 
